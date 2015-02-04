@@ -75,7 +75,7 @@ fmt.Println(list) // [2, 3, 7, 9, 11, 12, 27, 33, 41, 54, 87, 99]
 
 # Benchmarks
 
-The following benchmarks were achieved on a 2012 Macbook pro '15 with an i7 processor. It is probably most insightful to note the differences between results using different input sizes on the same algorithm as well as the performance differences between algorithms not the actual values.
+The following benchmarks were achieved on a 2012 Macbook pro '15 with an i7 processor. It is probably most insightful to note the differences between results using different input sizes on the same algorithm as well as the performance differences between algorithms, not the actual values.
 
 **Merge Sort:**
 
@@ -106,7 +106,7 @@ BenchmarkBubbleSort500	    3000	    	455174 ns/op
 BenchmarkBubbleSort5000	    30	  			46624990 ns/op
 ```
 
-Bubble sort is surprisingly faster on very small input sizes but then grows exponentially with the input size to be very unusable for large problems.
+Bubble sort is faster on very small input sizes and then grows exponentially with the input size to become unusable for large problems.
 
 **Selection Sort:**
 
@@ -117,4 +117,4 @@ BenchmarkSelectionSort500	   	10000	    	164446 ns/op
 BenchmarkSelectionSort5000	    100	  			11579992 ns/op
 ```
 
-Selection sort also grows exponentially with the size of the input but does perform better then Bubblesort if you have to pick an O(n^2) algorithm ;)
+Selection sort also grows exponentially with the size of the input but does perform better then Bubblesort if you had to pick an O(n^2) algorithm ;)
