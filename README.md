@@ -1,6 +1,6 @@
 [![GoDoc](http://godoc.org/github.com/fabioberger/sort?status.svg)](https://godoc.org/github.com/fabioberger/sort)
 
-Data Structures Implemented in Go
+Sorting Algorithms Implemented in Go
 -----------------------------------------------
 
 # Installation
@@ -75,7 +75,7 @@ fmt.Println(list) // [2, 3, 7, 9, 11, 12, 27, 33, 41, 54, 87, 99]
 
 # Benchmarks
 
-The following benchmarks were achieved while running on a 2012 Macbook pro '15 with an i7 processor. It is probably most useful to observe the differences between the performances of the different sorting algorithms rather then the actual values. 
+The following benchmarks were achieved while running on a 2012 Macbook pro '15 with an i7 processor. It is probably most useful to observe the differences between the performances of the different sorting algorithms rather then the actual values.
 
 **Merge Sort:**
 
@@ -85,7 +85,7 @@ BenchmarkMergeSort50	   	100000	     	15518 ns/op
 BenchmarkMergeSort500	   	10000	    	171488 ns/op
 BenchmarkMergeSort5000	    1000	   		1811139 ns/op
 ```
-Each line above represents running a single benchmarking test with the size of the list being sorted appended at the end of the first segment (i.e n = 5, 50, 500, 5000). The second column shows how many times the sort function was run (so as to get statistically significant results). As expected, the larger the input, the less times we are able to sort within the same allotted time. The last column is the average speed at which the sorting algorithm ran. Intuitively, larger inputs took longer to sort. What is very noticable is how certain sorting algorithms grow exponentially with the size of their input while others grow slower. 
+Each line above represents running a single benchmarking test with the size of the list being sorted appended at the end of the first segment (i.e n = 5, 50, 500, 5000). The second column shows how many times the sort function was run (so as to get statistically significant results). As expected, the larger the input, the less times we are able to sort within the same allotted time. The last column is the average speed at which the sorting algorithm ran. Intuitively, larger inputs took longer to sort. What is very noticable is how certain sorting algorithms grow exponentially with the size of their input while others grow slower.
 
 **Quick Sort:**
 
@@ -95,7 +95,7 @@ BenchmarkQuickSort50	  	200000	      	 6480 ns/op
 BenchmarkQuickSort500	   	20000	     	 72003 ns/op
 BenchmarkQuickSort5000	    2000	    	 738737 ns/op
 ```
-Quicksort is visibly faster on all input sizes then merge sort. 
+Quicksort is visibly faster on all input sizes then merge sort.
 
 **Bubble Sort:**
 
@@ -117,4 +117,4 @@ BenchmarkSelectionSort500	   	10000	    	164446 ns/op
 BenchmarkSelectionSort5000	    100	  			11579992 ns/op
 ```
 
-Selection sort also grows exponentially with the size of the input but does perform better then Bubblesort if you have to pick an O(n^2) algorithm ;) 
+Selection sort also grows exponentially with the size of the input but does perform better then Bubblesort if you have to pick an O(n^2) algorithm ;)
