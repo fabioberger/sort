@@ -75,7 +75,7 @@ fmt.Println(list) // [2, 3, 7, 9, 11, 12, 27, 33, 41, 54, 87, 99]
 
 # Benchmarks
 
-The following benchmarks were achieved while running on a 2012 Macbook pro '15 with an i7 processor. It is probably most useful to observe the differences between the performances of the different sorting algorithms rather then the actual values.
+The following benchmarks were achieved on a 2012 Macbook pro '15 with an i7 processor. It is probably most insightful to note the differences between results using different input sizes on the same algorithm as well as the performance differences between algorithms not the actual values.
 
 **Merge Sort:**
 
