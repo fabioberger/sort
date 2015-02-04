@@ -7,19 +7,19 @@ Sorting Algorithms Implemented in Go
 
 Install with go get:
 
-```
+```bash
 go get github.com/fabioberger/sort
 ```
 
 Then include the package in your imports:
 
-```
+```bash
 import "github.com/fabioberger/sort"
 ```
 
-If you are using the sort standard library "golang.org/pkg/sort" making the package names conflict, you can customize the name for this package:
+If you are using the sort standard library "golang.org/pkg/sort" the package names might conflict. To solve this, you can customize the name for this package:
 
-```
+```bash
 import isort "github.com/fabioberger/sort"
 ```
 
@@ -29,13 +29,13 @@ and then reference the package with "isort" instead of "sort"
 
 To run the unit tests, execute the following from within the package directory:
 
-```
+```bash
 go test ./... -v
 ```
 
 To run the benchmark tests, execute:
 
-```
+```bash
 go test -bench=.
 ```
 
